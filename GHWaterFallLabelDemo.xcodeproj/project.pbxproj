@@ -13,6 +13,9 @@
 		D6FDF3752217FC2300219799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FDF3742217FC2300219799 /* Assets.xcassets */; };
 		D6FDF3782217FC2300219799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FDF3762217FC2300219799 /* LaunchScreen.storyboard */; };
 		D6FDF37B2217FC2300219799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF37A2217FC2300219799 /* main.m */; };
+		D6FDF3872218F51000219799 /* GHWaterFallLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF3862218F51000219799 /* GHWaterFallLabel.m */; };
+		D6FDF38C2218F55700219799 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF3892218F55700219799 /* UIView+Extension.m */; };
+		D6FDF38D2218F55700219799 /* NSArray+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF38B2218F55700219799 /* NSArray+Bounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		D6FDF3772217FC2300219799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6FDF3792217FC2300219799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FDF37A2217FC2300219799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6FDF3852218F51000219799 /* GHWaterFallLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWaterFallLabel.h; sourceTree = "<group>"; };
+		D6FDF3862218F51000219799 /* GHWaterFallLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWaterFallLabel.m; sourceTree = "<group>"; };
+		D6FDF3882218F55700219799 /* NSArray+Bounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Bounds.h"; sourceTree = "<group>"; };
+		D6FDF3892218F55700219799 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D6FDF38A2218F55700219799 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D6FDF38B2218F55700219799 /* NSArray+Bounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Bounds.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		D6FDF35F2217FC2100219799 = {
 			isa = PBXGroup;
 			children = (
+				D6FDF3842218F50900219799 /* GHWaterFallLabel */,
 				D6FDF36A2217FC2100219799 /* GHWaterFallLabelDemo */,
 				D6FDF3692217FC2100219799 /* Products */,
 			);
@@ -69,6 +79,19 @@
 				D6FDF37A2217FC2300219799 /* main.m */,
 			);
 			path = GHWaterFallLabelDemo;
+			sourceTree = "<group>";
+		};
+		D6FDF3842218F50900219799 /* GHWaterFallLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D6FDF3852218F51000219799 /* GHWaterFallLabel.h */,
+				D6FDF3862218F51000219799 /* GHWaterFallLabel.m */,
+				D6FDF3882218F55700219799 /* NSArray+Bounds.h */,
+				D6FDF38B2218F55700219799 /* NSArray+Bounds.m */,
+				D6FDF38A2218F55700219799 /* UIView+Extension.h */,
+				D6FDF3892218F55700219799 /* UIView+Extension.m */,
+			);
+			path = GHWaterFallLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FDF38C2218F55700219799 /* UIView+Extension.m in Sources */,
 				D6FDF3702217FC2100219799 /* ViewController.m in Sources */,
 				D6FDF37B2217FC2300219799 /* main.m in Sources */,
+				D6FDF38D2218F55700219799 /* NSArray+Bounds.m in Sources */,
+				D6FDF3872218F51000219799 /* GHWaterFallLabel.m in Sources */,
 				D6FDF36D2217FC2100219799 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
