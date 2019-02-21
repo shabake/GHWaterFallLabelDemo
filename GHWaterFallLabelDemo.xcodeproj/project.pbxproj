@@ -16,6 +16,7 @@
 		D6FDF3872218F51000219799 /* GHWaterFallLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF3862218F51000219799 /* GHWaterFallLabel.m */; };
 		D6FDF38C2218F55700219799 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF3892218F55700219799 /* UIView+Extension.m */; };
 		D6FDF38D2218F55700219799 /* NSArray+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF38B2218F55700219799 /* NSArray+Bounds.m */; };
+		D6FDF5B2221E8DD000219799 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6FDF5B1221E8DD000219799 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D6FDF3892218F55700219799 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D6FDF38A2218F55700219799 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D6FDF38B2218F55700219799 /* NSArray+Bounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Bounds.m"; sourceTree = "<group>"; };
+		D6FDF5B1221E8DD000219799 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		D6FDF3842218F50900219799 /* GHWaterFallLabel */ = {
 			isa = PBXGroup;
 			children = (
+				D6FDF5B1221E8DD000219799 /* README.md */,
 				D6FDF3852218F51000219799 /* GHWaterFallLabel.h */,
 				D6FDF3862218F51000219799 /* GHWaterFallLabel.m */,
 				D6FDF3882218F55700219799 /* NSArray+Bounds.h */,
@@ -153,6 +156,7 @@
 			files = (
 				D6FDF3782217FC2300219799 /* LaunchScreen.storyboard in Resources */,
 				D6FDF3752217FC2300219799 /* Assets.xcassets in Resources */,
+				D6FDF5B2221E8DD000219799 /* README.md in Resources */,
 				D6FDF3732217FC2100219799 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
