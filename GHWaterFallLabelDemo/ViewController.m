@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GHWaterFallLabel.h"
+#import "NSString+GHAdd.h"
 
 @interface ViewController ()
 @property (nonatomic , strong) GHWaterFallLabel *waterFallLabel;
@@ -20,10 +21,13 @@
     [super viewDidLoad];
     [self.view addSubview:self.waterFallLabel];
     self.navigationItem.title = @"流水菜单";
-    self.dataArray = @[@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊",@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1",@"2",@"3",@"4",@"呵呵啊",@"呵呵啊呵呵啊呵呵啊呵呵啊"@"1"];
-    
+    for (NSInteger index = 0; index < 40; index++) {
+        NSString *str = [NSString arc4randomStringWithCount:3 minCount:arc4random() % 10];
+        NSLog(@"str%@",str);
+        [self.dataArray addObject:str];
+    }
+   
     self.waterFallLabel.tags = self.dataArray;
-
 }
 
 - (GHWaterFallLabel *)waterFallLabel {
@@ -39,5 +43,12 @@
         };
     }
     return _waterFallLabel;
+}
+
+- (NSMutableArray *)dataArray {
+    if (_dataArray == nil) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
 }
 @end

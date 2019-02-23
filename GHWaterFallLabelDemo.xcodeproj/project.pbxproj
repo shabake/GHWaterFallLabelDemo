@@ -17,6 +17,7 @@
 		D6FDF38C2218F55700219799 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF3892218F55700219799 /* UIView+Extension.m */; };
 		D6FDF38D2218F55700219799 /* NSArray+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF38B2218F55700219799 /* NSArray+Bounds.m */; };
 		D6FDF5B2221E8DD000219799 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6FDF5B1221E8DD000219799 /* README.md */; };
+		D6FDF6652221AFEF00219799 /* NSString+GHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF6642221AFEF00219799 /* NSString+GHAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		D6FDF38A2218F55700219799 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D6FDF38B2218F55700219799 /* NSArray+Bounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Bounds.m"; sourceTree = "<group>"; };
 		D6FDF5B1221E8DD000219799 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D6FDF6632221AFEE00219799 /* NSString+GHAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GHAdd.h"; sourceTree = "<group>"; };
+		D6FDF6642221AFEF00219799 /* NSString+GHAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GHAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		D6FDF3842218F50900219799 /* GHWaterFallLabel */ = {
 			isa = PBXGroup;
 			children = (
+				D6FDF6632221AFEE00219799 /* NSString+GHAdd.h */,
+				D6FDF6642221AFEF00219799 /* NSString+GHAdd.m */,
 				D6FDF5B1221E8DD000219799 /* README.md */,
 				D6FDF3852218F51000219799 /* GHWaterFallLabel.h */,
 				D6FDF3862218F51000219799 /* GHWaterFallLabel.m */,
@@ -171,6 +176,7 @@
 				D6FDF38C2218F55700219799 /* UIView+Extension.m in Sources */,
 				D6FDF3702217FC2100219799 /* ViewController.m in Sources */,
 				D6FDF37B2217FC2300219799 /* main.m in Sources */,
+				D6FDF6652221AFEF00219799 /* NSString+GHAdd.m in Sources */,
 				D6FDF38D2218F55700219799 /* NSArray+Bounds.m in Sources */,
 				D6FDF3872218F51000219799 /* GHWaterFallLabel.m in Sources */,
 				D6FDF36D2217FC2100219799 /* AppDelegate.m in Sources */,
