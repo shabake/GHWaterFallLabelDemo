@@ -21,12 +21,17 @@
     [super viewDidLoad];
     [self.view addSubview:self.waterFallLabel];
     self.navigationItem.title = @"流水菜单";
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"切换数据" style:UIBarButtonItemStylePlain target:self action:@selector(refresh)];
+    self.waterFallLabel.tags = self.dataArray;
+}
+
+- (void)refresh {
+    [self.dataArray removeAllObjects];
     for (NSInteger index = 0; index < 40; index++) {
         NSString *str = [NSString arc4randomStringWithCount:3 minCount:arc4random() % 10];
-        NSLog(@"str%@",str);
         [self.dataArray addObject:str];
     }
-   
     self.waterFallLabel.tags = self.dataArray;
 }
 
@@ -48,6 +53,10 @@
 - (NSMutableArray *)dataArray {
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
+        for (NSInteger index = 0; index < 40; index++) {
+            NSString *str = [NSString arc4randomStringWithCount:3 minCount:arc4random() % 10];
+            [_dataArray addObject:str];
+        }
     }
     return _dataArray;
 }

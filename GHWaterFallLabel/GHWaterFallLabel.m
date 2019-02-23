@@ -121,9 +121,13 @@
 - (void)setTags:(NSMutableArray *)tags {
     _tags = tags;
     
+    
     for (GHLabel *label in self.labels) {
         [label removeFromSuperview];
     }
+    
+    [self.labels removeAllObjects];
+
 
     for (NSInteger index = 0; index < tags.count; index++) {
         GHLabel *tag = [[GHLabel alloc]init];
