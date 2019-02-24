@@ -18,11 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  随机生成文字
 
- @param range <#range description#>
- @param minCount <#minCount description#>
- @return 文字
+ @param count 生成文字的长度
+ @param minCount 生成文字的最小长度
+ @return 随机文字
  */
-+ (NSString *)arc4randomStringWithCount: (NSInteger)range minCount: (NSInteger)minCount;
++ (NSString *)arc4randomStringWithCount: (NSInteger)count minCount: (NSInteger)minCount;
 
 @end
 

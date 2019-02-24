@@ -14,10 +14,10 @@
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:nil].size;
 }
 
-+ (NSString *)arc4randomStringWithCount: (NSInteger)range minCount: (NSInteger)minCount {
++ (NSString *)arc4randomStringWithCount: (NSInteger)count minCount: (NSInteger)minCount {
     NSMutableString *str = [NSMutableString string];
     
-    for (NSInteger index = 0; index <(arc4random() % range) + minCount ; index++) {
+    for (NSInteger index = 0; index <(arc4random() % count + minCount) ; index++) {
         NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
         NSInteger randomH = 0xA1 + arc4random()%(0xFE - 0xA1+1);
         NSInteger randomL = 0xB0 + arc4random()%(0xF7 - 0xB0+1);

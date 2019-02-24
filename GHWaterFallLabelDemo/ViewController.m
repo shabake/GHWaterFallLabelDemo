@@ -29,7 +29,7 @@
 - (void)refresh {
     [self.dataArray removeAllObjects];
     for (NSInteger index = 0; index < 40; index++) {
-        NSString *str = [NSString arc4randomStringWithCount:3 minCount:arc4random() % 10];
+        NSString *str = [NSString arc4randomStringWithCount:6 minCount:2];
         [self.dataArray addObject:str];
     }
     self.waterFallLabel.tags = self.dataArray;
@@ -41,7 +41,7 @@
         [_waterFallLabel setPoint:CGPointMake(0, 88)];
         _waterFallLabel.isMultiple = NO;
         _waterFallLabel.heightBlock = ^(CGFloat height) {
-            
+            height = height - 88;
         };
         _waterFallLabel.textBlock = ^(GHWaterFallLabel * _Nonnull waterFallLabel, NSString * _Nonnull text, NSInteger index) {
             
@@ -54,7 +54,7 @@
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
         for (NSInteger index = 0; index < 40; index++) {
-            NSString *str = [NSString arc4randomStringWithCount:3 minCount:arc4random() % 10];
+            NSString *str = [NSString arc4randomStringWithCount:10 minCount:2];
             [_dataArray addObject:str];
         }
     }
